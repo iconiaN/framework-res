@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tabunlock="http://schemas.android.com/apk/res/com.android.tabunlock">
+    <RelativeLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/transport_bg_protect" android:layout_width="512.0dip" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="-20.0dip" android:layout_marginRight="64.0dip" android:layout_marginBottom="82.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/keyguard_screen_shell_status_land" />
+            <include android:layout_gravity="fill" android:id="@id/transport" android:layout_width="fill_parent" android:layout_height="512.0dip" android:layout_column="0" android:layout_row="0" android:layout_rowSpan="3" android:layout_columnSpan="1" layout="@layout/keyguard_transport_control" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textAppearance="?textAppearanceMedium" android:gravity="center" android:id="@id/screenLocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:drawablePadding="4.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/unlock_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.android.internal.policy.impl.LiftWaveView android:id="@id/unlock_widget" android:layout_width="620.0dip" android:layout_height="490.0dip" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/unlock_ap_01" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="130.0dip" android:layout_marginTop="0.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/unlock_ap_text_01" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/unlock_ap_02" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="115.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/unlock_ap_text_02" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/unlock_ap_03" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="350.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/unlock_ap_text_03" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/unlock_ap_04" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="130.0dip" android:layout_marginTop="465.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="@color/white" android:ellipsize="marquee" android:id="@id/unlock_ap_text_04" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" android:marqueeRepeatLimit="marquee_forever" />
+            </LinearLayout>
+        </FrameLayout>
+        <Button android:id="@id/emergencyCallButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="80.0dip" android:layout_marginBottom="80.0dip" android:drawableLeft="@drawable/ic_emergency" android:drawablePadding="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/Widget.Button.Transparent" />
+    </RelativeLayout>
+</LinearLayout>
