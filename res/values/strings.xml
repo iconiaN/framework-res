@@ -36,7 +36,7 @@
     <string name="ext_storage_usbdisk_checking_notification_title">Preparing USB storage.</string>
     <string name="ext_storage_usbdisk_checking_notification_message">Preparing USB storage.</string>
     <string name="touch_sensitivity_level_sysfs_path">/sys/Touch/sensitivity</string>
-    <string name="config_ethernet_iface_regex">eth\\d</string>
+    <string name="config_ethernet_iface_regex">(eth|usb)\\d</string>
     <string name="config_tether_apndata" />
     <string name="config_wifi_p2p_device_type">10-0050F204-5</string>
     <string name="default_wallpaper_component">@null</string>
