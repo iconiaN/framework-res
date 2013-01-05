@@ -2,9 +2,8 @@
 <StorageList
   xmlns:android="http://schemas.android.com/apk/res/android">
     <storage android:mountPoint="/storage/sdcard0" android:storageDescription="@string/storage_internal" android:primary="true" android:emulated="true" android:mtpReserve="100" />
-    <storage android:mountPoint="/mnt/external_sd" android:storageDescription="@string/storage_sd_card" android:removable="true" android:maxFileSize="4096" />
+    <storage android:mountPoint="/mnt/external_sd" android:storageDescription="@string/storage_sd_card" android:removable="true" />
     <storage android:mountPoint="/mnt/usb_storage/d1p1" android:storageDescription="@string/storage_usb" android:removable="true" />
     <storage android:mountPoint="/mnt/usb_storage/d2p1" android:storageDescription="@string/storage_usb" android:removable="true" />
     <storage android:mountPoint="/mnt/usb_storage/d3p1" android:storageDescription="@string/storage_usb" android:removable="true" />
-    <storage android:mountPoint="/mnt/usb_storage/d4p1" android:storageDescription="@string/storage_usb" android:removable="true" />
 </StorageList>
